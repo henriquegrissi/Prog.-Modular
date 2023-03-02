@@ -16,7 +16,6 @@ public class Pizza {
     //Construtores
     /**
      * Construtor de Pizza Básica
-     * @param adicional Quantidade de adicionais
      */
     public Pizza (){
         this.basica = true ;
