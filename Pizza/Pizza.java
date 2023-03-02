@@ -1,21 +1,32 @@
+package Pizza;
 
+/**
+ * Classe Pizza, criada baseada no enunciado do Exercício 1
+ * @author Henrique Grissi
+ * 
+ */
 public class Pizza {
     
     //Atributos
-
     private boolean basica;
     private double adicional;
     private double valorTotal;
-    //deve ter uma nota com descrição e valor
 
 
     //Construtores
-
+    /**
+     * Construtor de Pizza Básica
+     * @param adicional Quantidade de adicionais
+     */
     public Pizza (){
         this.basica = true ;
         this.adicional = 0;
         this.valorTotal = 25;
     }
+    /**
+     * Construtor de Pizza com adicionais
+     * @param adicional Quantidade de adicionais
+     */
     public Pizza (double adicional){
 
         this.basica = false;
@@ -35,7 +46,10 @@ public class Pizza {
         return valorTotal;
     }
 
-
+    /**
+     * Método que Calcula o valor total da pizza.
+     * @return Valor total da PIZZA
+     */
     public double calculaValorTotal(){
         return this.adicionaisMax() + 25;
     }
@@ -43,6 +57,7 @@ public class Pizza {
 
 /**
     *   Método para verificar número máximo de adicionais e devolve valor
+    * @return Valor total dos ADICIONAIS
 **/
 
     public double adicionaisMax(){
@@ -56,6 +71,10 @@ public class Pizza {
     }
 
 
+    /**
+     *  
+     * Método da emissão da Nota, descrição do tipo de Pizza (Básica ou com adicionais) e o seu valor! 
+     */
 
     public void emiteNota (){
 
